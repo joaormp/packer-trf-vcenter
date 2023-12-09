@@ -15,7 +15,7 @@ vm_firmware                 = "bios"
 vm_cdrom_type               = "sata"
 vm_cpu_sockets              = 2
 vm_cpu_cores                = 2
-vm_mem_size                 = 2024
+vm_mem_size                 = 4096
 vm_disk_size                = 20480
 thin_provision              = true
 disk_eagerly_scrub          = false
@@ -34,4 +34,4 @@ iso_url                     = "https://releases.ubuntu.com/releases/jammy/ubuntu
 # Scripts
 
 # shell_scripts               = ["./scripts/setup_ubuntu2204_withDocker.sh"]
-shell_scripts               = ["./scripts/setup_ubuntu2204.sh"]
+shell_scripts               = ["./scripts/setup_after.sh"]

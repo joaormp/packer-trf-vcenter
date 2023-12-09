@@ -4,11 +4,11 @@ autoinstall:
     early-commands:
         # workaround to stop ssh for packer as it thinks it timed out
         - sudo systemctl stop ssh
-    locale: en_US
+    locale: pt_PT.UTF-8
     keyboard:
-        layout: us
+        layout: pt
         #variant: us
-    packages: [open-vm-tools, openssh-server, net-tools, perl, open-iscsi, ntp, curl, vim, ifupdown, zip, unzip, gnupg2, software-properties-common, apt-transport-https, ca-certificates, lsb-release, python3-pip, jq, cloud-init, grub]
+    packages: [open-vm-tools, openssh-server, net-tools, perl, open-iscsi, ntp, curl, vim, ifupdown, zip, unzip, gnupg2, software-properties-common, apt-transport-https, ca-certificates, lsb-release, python3-pip, jq, cloud-init]
     network:
         network:
             version: 2

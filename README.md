@@ -26,3 +26,8 @@ packer build -force -on-error=ask -var-file variables.pkrvars100GBdisk.hcl -var-
 
 ## Troubleshooting
 - If packer gets stuck on `Waiting for IP` you may want to check your DHCP server. I'm using a home router and it had too many leases from running packer many times. I had to flush inactive DHCP clients, or reboot the router which is faster.
+
+##
+```ssh
+packer build -force -on-error=ask -var-file variables.pkrvars20GBdisk.hcl -var-file vsphere.pkrvars.hcl ubuntu-22.04.pkr.hcl
+```
